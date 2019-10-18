@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>{{object.fgdn}}</h1>
+    <p>Created: {{object.crdate}}</p>
+    <p>Disabled: {{object.erdate}}</p>
+    <p>Activeflags: </p>
+    {% for flag in domain_flags %}
+      <p>{{flag.flag}}</p>
+    {% endfor %}
+
+    <a href="{% url 'home' %}">Zpet</a>
+
+  </body>
+</html>

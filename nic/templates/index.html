@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1>Domain List</h1>
+<br>
+{% for domain in data %}
+<p>{{domain.domain.id}}</p>
+  <a href={{domain.id}}>{{domain.fgdn}}</a>
+  {% for flag in domain.domainflag_set.all %}
+    {% if flag.flag != 'EXPIRED' %}
+      <p>{{flag.flag}}</p>
+    {% endif %}
+<br>
+  {% endfor %}
+{% endfor %}
+  </body>
+</html>
