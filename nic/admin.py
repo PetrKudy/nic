@@ -1,3 +1,12 @@
 from django.contrib import admin
+from .models import Domain, DomainFlag
 
-# Register your models here.
+
+@admin.register(Domain)
+class DomainAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(DomainFlag)
+class DomainFlagAdmin(admin.ModelAdmin):
+    pass
