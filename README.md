@@ -1,0 +1,7 @@
+- Created schema.sql to create tables and fill up tables
+- Created project and joined to postgresql
+- Django model was created by manage.py inspectDB
+- Created Templated ListView and DetailView for Domain model
+- Model Domain was extended by exdate field (also made migratefile)
+- Cron command made to keep flag field actual
+- Test were made for Views and also for Command
